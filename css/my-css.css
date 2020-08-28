@@ -111,6 +111,16 @@ h2 {
    background-color: rgb(0,0,0); /* Fallback color */
    background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */    
  }
+ /* Styling for the global footer section */
+.my_footer {
+  bottom:0;
+  width:100%;
+  height: auto;
+  text-align: left;
+  background-color: rgb(14, 107, 107); /* Fallback color */
+  padding: 2%;
+  color: white;
+}
 /* Styling for the Privacy Page */
 .privacy-text{
    /* background-color: rgb(0,0,0); /* Fallback color */
@@ -122,30 +132,23 @@ h2 {
     padding-left: 10%;
     padding-right: 10%;
     /*margin: 5%;*/
+    padding-bottom: 10%;
 } 
 .priv-data{
     text-align: justify;
     margin-left:0;
 }
-/* Styling for the global footer section */
-.my_footer {
-  bottom:0;
-  width:100%;
-  height: auto;
-  text-align: left;
-  background-color: rgb(14, 107, 107); /* Fallback color */
-  padding: 2%;
-  color: white;
-}
 .privacy{
-  font-size: small;
+  /*font-size: small;*/
   text-align: center;
 }
 .copyright{
-font-size: x-small; 
+font-size: small; 
 margin-bottom: 10px;
 text-align: center;
 }
+
+
 /* for google map iframe - responsive styling*/
 .map_responsive{
 /*  overflow:hidden; */
