@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>The Haukai Restaurant Menu Page</title>
+    <link rel="stylesheet" href="css/my-css.css">
+ </head>
+ <body>
+
+
+
+    <!-- Here is our main header that is used across all the pages of our website -->
+    <!-- changing to w3 container    <header class="header">  -->
+    <header class="w3-container w3-teal">
+       <h1 id="menu">The Haukai Restaurant</h1>
+    </header>
+    <nav class="w3-bar w3-black">
+      <a href="index.html#home" class="w3-bar-item w3-button w3-mobile">Home</a>
+      <a href="menu.html#menu" class="w3-bar-item w3-button w3-mobile">Menu</a>
+      <a href="reservation.html#rese" class="w3-bar-item w3-button w3-mobile">Reservation</a>
+      <a href="hours.html#hour" class="w3-bar-item w3-button w3-mobile">Hours</a>
+      <a href="contact.html#cont" class="w3-bar-item w3-button w3-mobile">Contact</a>
+    </nav>
+
+<!-- Here is our page's main content -->
+<main>    
+<h2>A place to dine together and celebrate food!</h2>
+<!--Illustrative images  -Responsive Image Gallery-->
+<div class="menupage" role="img" aria-label="Appetizer">
+  <div class="gallery">
+    <a href="menu.html#appe">
+        <div class="top-left"> <strong>Appetizers</strong> </div>
+    </a>    
+    <a  href="menu.html#appe">
+      <img src="images/salmon.jpg" alt="Salmon Dish">
+    </a>
+    <div class="menu-desc"><strong>Our Appetizers -</strong> Bringing you the freshest selection of appetizers including our famous rewena bread</div>
+
+  </div>
+</div>
+
+
+<div class="menupage" role="img" aria-label="Main">
+  <div class="gallery">
+    <a href="menu.html#main"> 
+        <div class="top-left"><strong>Main</strong></div>      
+    </a>
+    <a  href="menu.html#main">
+      <img src="images/lamb.jpg" alt="Delicious Lamb Dish" >
+    </a>
+    <div class="menu-desc"><strong>Main Entrees -</strong> A feast selection of our best seafood and New Zealand meat you will surely enjoy </div>  
+  </div>
+</div>
+
+  <div class="menupage" role="img" aria-label="Dessert">
+    <div class="gallery">
+        <a href="menu.html#dess">
+            <div class="top-left"><strong>Dessert</strong></div>    
+        </a>   
+        <a href="menu.html#dess">
+            <img src="images/pudding.jpg" alt="Famous Pudding" >
+        </a>
+        <div class="menu-desc"><strong>Dessert -</strong> Try our ever popular golden syrup flavoured, steam pudding, served with vanilla ice cream</div>  
+    </div>   
+  </div>
+
+
+<div class="menupage" role="img" aria-label="Appetizer">
+  <div class="gallery">
+    <a href="menu.html#beve">
+        <div class="top-left"><strong>Beverages </strong></div>    
+    </a>    
+   
+    <a href="menu.html#beve">
+        <img src="images/wine.jpg" alt="Wine">
+    </a>
+    <div class="menu-desc"><strong>Our Beverages -</strong> A fine selection of New Zealand Red and White wines. We also have non-aloholic drinks.</div>  
+ 
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!--List of menu items displayed as a section-->
+    <section role="list" class="menu-panel">
+<!--Appetizer -->
+      <h2 id="appe"><strong>Appetizers</strong></h2>
+      <ul class="menu-items">
+        <li>
+        <strong>Rewena Bread $10</strong><br>
+        <span class="descript">Traditional Maori bread.  </span>
+        <br>
+        </li>      
+        
+        <li>
+        <strong>Paua Fritter $16</strong><br>
+        <span class="descript">Finely diced pieces of paua, served with a side salad and horopito dressing. </span>            
+        </li>
+       
+        <li>
+        <strong>Raw Fish $20</strong><br>
+        <span class="descript">Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions. </span>            
+        </li>
+        
+        <li>
+        <strong>Poached Salmon $22</strong><br>
+        <span class="descript">Salmon poached in an orange and pistachio glaze, served with rewena bread. </span>            
+        </li>
+       
+        <li>
+        <strong>Seafood Basket $25</strong><br>
+        <span class="descript">Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns. </span>            
+        </li>
+      </ul>       
+<!--Main Menu -->
+        <h2 id="main"><strong>Main</strong></h2>
+        <ul class="menu-items">
+          <li>
+            <strong>Fish of the Day $25</strong><br>
+            <span class="descript">Beer battered fish and kumara fries, served with a side salad and homemade tartare.  </span>
+            <br>
+          </li>      
+        
+          <li>
+            <strong>Mussels and Scallops $25</strong><br>
+            <span class="descript">Steamed mussel & scallop mousse, honey and soy broth. </span>            
+          </li>
+          
+          <li>
+            <strong>Seafood Chowder $30</strong><br>
+            <span class="descript">Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread. </span>            
+          </li>
+          
+          <li>
+            <strong>Pork Belly $30</strong><br>
+            <span class="descript">Slow cooked pork belly served on a bed of apple slaw with roasted kumara, and crispy noodle. </span>            
+          </li>
+      
+          <li>
+            <strong>Lamb Steak $33</strong><br>
+            <span class="descript">New Zealand Lamb coated in kawakawa crumb, served with Dijon mustard glazed carrots, roasted butternut squash and a mushroom Jus. </span>            
+          </li>
+          
+          <li>
+            <strong>Venison $33</strong><br>
+            <span class="descript">Venison crusted with Horopito, served with glazed plums, cabbage salad and red wine Jus </span>            
+          </li>                 
+        </ul>     
+
+<!--Dessert -->
+          <h2 id="dess"><strong>Dessert</strong></h2>
+
+          <ul class="menu-items">
+            <li>
+              <strong>Kapiti Ice Cream $10</strong><br>
+              <span class="descript">Check for daily specials.  </span>
+              <br>
+            </li>      
+          
+            <li>
+              <strong>Steam Pudding $12</strong><br>
+              <span class="descript">Golden syrup flavoured steam pudding, served with vanilla ice cream. </span>            
+            </li>
+           
+            <li>
+              <strong>Mini Pavlova $16</strong><br>
+              <span class="descript">Mini Pavlova, served with kawakawa and lemon infused cream and fresh fruit. </span>            
+            </li>
+           
+            <li>
+              <strong>Banoffee Pie $16</strong><br>
+              <span class="descript">Toffee, fresh bananas and fresh cream. </span>            
+            </li>
+          </ul>  
+ <!--Beverages -->             
+            <h2 id="beve"><strong>Beverages</strong></h2>
+       <div class="beverage-table"     >
+            <table id="wine">
+                <tr>
+                  <th>Red Wine</th>  
+                  <th>B/G</th>
+                </tr>
+                <tr>
+                    <td>Terrace Edge Pinot Noir, 2012, Wairarapa</td>  
+                    <td>53/13</td>
+                </tr>
+                <tr>
+                    <td>Altitude Pinot Noir, 2010, Marlborough </td>  
+                    <td>64/15</td>
+                </tr>
+                <tr>
+                    <td>Greystone Pinot Noir, 2012, Wairarapa</td>  
+                    <td>53/13</td>
+                </tr>
+                <tr>
+                    <td>Terrace Edge, Syrah, 2012 Wairarapa	</td>  
+                    <td>53/13</td>
+                </tr>
+                <tr>
+                    <td>Altitude Syrah, 2010 Marlborough	</td>  
+                    <td>64/15</td>
+                </tr>                   <tr>
+                    <td>Greystone Syrah, 2012, Wairarapa 	</td>  
+                    <td>73/17</td>
+                </tr>                   <tr>
+                    <td>Pegasus Bay Merlot, 2013, Waipara		</td>  
+                    <td>65/14</td>
+                </tr>                   <tr>
+                    <td>Pegasus Bay Pinot Noir, 2013, Waipara	</td>  
+                    <td>110</td>
+                </tr>
+            </table>
+            <p></p>
+            <table>
+                <tr>
+                  <th id="wine-name">White Wine</th>  
+                  <th id="price">B/G</th>
+                </tr>
+                <tr>
+                    <td>Spade Oak Pinot Gris, 2011, Gisborne</td>  
+                    <td>40/10</td>
+                </tr>
+                <tr>
+                    <td>Maude Pinot Gris, 2017, Otago </td>  
+                    <td>49.50/11</td>
+                </tr>
+                <tr>
+                    <td>Charles Wiffen Chardonnay, 2013, Otago</td>  
+                    <td>48/11</td>
+                </tr>
+                <tr>
+                    <td>Amisfield, Riesling, 2016, Otago	</td>  
+                    <td>53/12</td>
+                </tr>
+                <tr>
+                    <td>Lamont Riesling, 2010, Otago	</td>  
+                    <td>57/13</td>
+                </tr>                   <tr>
+                    <td>Elephant Hill Viognier, 2013, Hawkes Bay	</td>  
+                    <td>55/12</td>
+                </tr>                   <tr>
+                    <td>Folium Sauvignon Blanc, 2011, Marlborough		</td>  
+                    <td>52/11</td>
+                </tr>                   <tr>
+                    <td>Billecart-Salmon Brut Reserve, France	</td>  
+                    <td>120</td>
+                </tr>
+            </table >
+            <p></p>
+            <table id ="beer">
+                <tr>
+                  <th>Beer And Cider</th>  
+                  <th></th>
+                </tr>
+                <tr>
+                    <td>Garage project range </td>  
+                    <td>$11</td>
+                </tr>
+                <tr>
+                    <td>Tuatara range	 </td>  
+                    <td>$11</td>
+                </tr>
+                <tr>
+                    <td>Panhead range</td>  
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Coopers Ale	</td>  
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Heineken	</td>  
+                    <td>$11</td>
+                </tr>                   
+                <tr>
+                    <td>Moa Cider	</td>  
+                    <td>$10</td>
+                </tr>                   
+                <tr>
+                    <td>Crooked Cider</td>  
+                    <td>$10</td>
+                </tr>                  
+                        </table>
+            <p></p>
+            <table id="non-alcohol">
+                <tr>
+                  <th>Non-alcoholic Drinks</th>  
+                  <th></th>
+                </tr>
+                <tr>
+                    <td>Mineral water </td>  
+                    <td>$4.00</td>
+                </tr>
+                <tr>
+                    <td>Soft drinks</td>  
+                    <td>$4.00</td>
+                </tr>
+                <tr>
+                    <td>Juice</td>  
+                    <td>$4.00</td>
+                </tr>
+                <tr>
+                    <td>Coffee</td>  
+                    <td>$4.50</td>
+                </tr>
+                <tr>
+                    <td>Tea</td>  
+                    <td>$3.50</td>
+                </tr>   
+             </table>   
+        </div>
+    </section>
+  </main>
+
+ 
+     
+
+  
+
+
+
+
+<!-- And here is our main footer that is used across all the pages of our website -->
+<footer>
+<div class="my_footer"  role="contentinfo">
+  <div class="privacy">
+    <a   href="privacy.html#priv" ><strong>Privacy Policy</strong></a>
+  </div>
+  <div class="copyright"> 
+    <p> All rights reserved. ©Copyright 2020 The Haukai Restaurant.    </p> 
+  </div>
+</div>
+</footer>
+
+</body>
+</html>

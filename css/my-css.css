@@ -1,0 +1,255 @@
+/*===============================css required styling======================*/
+/* Universal box sizing */
+* { 
+    box-sizing: border-box;
+}
+.container {   /*this flex-box method is for index page use to set the screen to 100vh needed to control the footer*/
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+  }
+ /*======tbc============*/
+  header { 
+    height: 100px;
+    flex-shrink: 0;
+ }
+  main {
+    flex: 1 0 auto;   /* parameters flex: [flex-grow, flex-shrink, flex-basis]*/
+  }
+/*======end of tbc======*/
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  /*font-size: calc(112.5% + 0.25vw);*/
+  font-size: calc(112.5% + 0.15vw);
+}
+body{   /* this is the settings mainly for the global background image */
+  background-image: url(../images/rest1.jpg);
+  background-position: center center;  /* Image is centered vertically and horizontally at all times */
+  background-repeat: no-repeat;  /* Image doesn't repeat */
+  background-attachment: fixed;  /* Makes the image fixed in the viewport so that it doesn't move when the content height is greater than the image height */
+  background-size: cover; /* This is what makes the background image rescale based on its container's size */
+  background-color:#464646;  /* Pick a solid background color that will be displayed while the background image is loading */
+}
+/* For mobile devices --->  LISA to compute the aspect ratio of the smaller picture given the width & height*/
+@media only screen and (max-width: 400px) {
+   body {
+     /* The file size of this background image is ___ smaller
+      * to improve page load speed on mobile internet connections */
+     background-image: url(../images/restaurant_640_small.jpg);
+   }
+   /*  .footer_container{
+       flex-direction: column;
+     }*/
+}
+/* Style for sub headings */
+h2 {
+  /*   font: size 3vw;  */
+     text-align: center;
+     color: white;
+     background-color: rgb(0,0,0); /* Fallback color */
+     background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+ }
+ h3  {
+   /* font-size: 2vw;*/
+    text-align: center;
+ }
+ p.intro{
+     font-family:"Arial Black", Gadget, sans-serif;
+     text-align: left;   
+     color: white; 
+     margin-top: 50px;
+ }
+ /* index html styling for the Experience Maori Culture & kai box*/
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 75%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+/*for the google form iframe - responsive styling */
+.reservation {
+  position: relative;
+  width: 100%;
+  height:0;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) --> this creates gap*/
+  text-align: center;
+}
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive_reservation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border:0;
+}
+ /*styling for the reservation page*/
+ .reservation-page{
+   text-align: center;
+   margin-top: 3%;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-bottom: 10%;
+   padding-top: 2%;
+   padding-bottom: 5%;
+   color: white;
+  /* padding: 3%;*/
+   /*background-color: grey;*/
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */    
+ }
+/* Styling for the Privacy Page */
+.privacy-text{
+   /* background-color: rgb(0,0,0); /* Fallback color */
+  /*background-color: rgba(0,0,0, 0.8);    /* Black w/opacity/see-through */
+  background-color: grey; /* Fallback color */
+    text-align: justify;
+    color: black;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    /*margin: 5%;*/
+} 
+.priv-data{
+    text-align: justify;
+}
+/* Styling for the global footer section */
+.my_footer {
+  bottom:0;
+  width:100%;
+  height: auto;
+  text-align: left;
+  background-color: rgb(14, 107, 107); /* Fallback color */
+  padding: 2%;
+  color: white;
+}
+.privacy{
+  font-size: small;
+  text-align: center;
+}
+.copyright{
+font-size: x-small; 
+margin-bottom: 10px;
+text-align: center;
+}
+/* for google map iframe - responsive styling*/
+.map_responsive{
+/*  overflow:hidden; */
+  padding-bottom:56.25%; 
+  position:relative;
+  min-height:300px; 
+  max-width:700px;
+  border: 2px black;
+}
+.map_responsive iframe{
+  left:0;
+  top:0;
+  height:100%; 
+  width:100%;
+  position:absolute;
+}
+/* for the image gallery in menu page - responsive grid images*/
+div.gallery {
+  /* border: 1px solid #ccc;  */
+   padding:5%;
+ }
+ div.gallery:hover {
+   border: 1px solid #777;
+ }
+ div.gallery img {
+   width: 100%;
+   height: auto;
+   position: relative;
+   text-align: center;
+   color:white;
+ }
+ div.top-left{
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0, 0.9); /* Black w/opacity/see-through */      
+   position: relative;
+   top: 2px;
+   left: 2px;  
+   color: white;
+ }
+ .menu-panel{
+   padding-top: 5%;
+   background-color: grey; /* Fallback color */
+   text-align: center;
+ }
+ ul{
+   list-style-type: none;
+   text-align : center;
+   margin: 5px 5px 5px 30px;
+}
+td,tr{
+  list-style-type: none;
+  text-align : left;
+  margin: 5px 5px 5px 30px; 
+  
+}
+table{
+   margin-left:auto; 
+   margin-right:auto;
+}
+.menupage {
+   padding: 0 6px;
+   float: left;
+   width: 24.99999%;
+   position: relative;
+ }
+ /*  Still need to work on the issue of image skipping at width=50%  ----
+ @media only screen and (max-width: 700px) {
+   .menupage {
+     width: 49.99999%; 
+     margin: 6px 0;
+   }
+ } 
+ */
+ @media only screen and (max-width: 500px) {
+   .menupage {
+     width: 100%;
+   }
+ }
+ .clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+/* menu page - menu description styling*/
+.menu-desc {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: small;
+  font-style: italic;
+} 
+section {
+  padding-bottom: 20%;  
+}
+ /* end of menu page styling */
+ /*Styling for Contact page */
+ .contact{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */    
+  color: white;
+  padding: 10%;
+ }
+.calendar, map{
+ margin-top: 5%;
+}
+/*======================end of css required styling======================*/
