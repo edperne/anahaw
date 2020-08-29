@@ -25,12 +25,19 @@ body, html {
   font-size: calc(112.5% + 0.15vw);
 }
 body{   /* this is the settings mainly for the global background image */
-  background-image: url(../images/rest1.jpg);
+  background-image: url(../images/rest1_mod50.jpg);
   background-position: center center;  /* Image is centered vertically and horizontally at all times */
   background-repeat: no-repeat;  /* Image doesn't repeat */
   background-attachment: fixed;  /* Makes the image fixed in the viewport so that it doesn't move when the content height is greater than the image height */
   background-size: cover; /* This is what makes the background image rescale based on its container's size */
   background-color:#464646;  /* Pick a solid background color that will be displayed while the background image is loading */
+}
+/* formatting images on the index page*/
+.w3-card{
+  text-align: center;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+
 }
 /* For mobile devices --->  LISA to compute the aspect ratio of the smaller picture given the width & height*/
 @media only screen and (max-width: 400px) {
