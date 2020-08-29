@@ -33,17 +33,15 @@ body{   /* this is the settings mainly for the global background image */
   background-color:#464646;  /* Pick a solid background color that will be displayed while the background image is loading */
 }
 /* formatting images on the index page*/
-/*
 .w3-card{
   text-align: center;
-  background-color: grey;
-  background-size: cover;
-  width: 70%;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.6); 
+  width: 80%;
   padding-top: 5%;
   margin-left: 20%;
-  margin-right: 20%;
+  margin-right: 20%; 
 }
-*/
 /* For mobile devices --->  LISA to compute the aspect ratio of the smaller picture given the width & height*/
 @media only screen and (max-width: 400px) {
    body {
