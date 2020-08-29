@@ -46,7 +46,7 @@ body{   /* this is the settings mainly for the global background image */
    body {
      /* The file size of this background image is ___ smaller
       * to improve page load speed on mobile internet connections */
-     background-image: url(../images/restaurant_640_small.jpg);
+     background-image: url(../images/rest1_small_mod50.JPG);
    }
    /*  .footer_container{
        flex-direction: column;
