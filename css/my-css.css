@@ -39,8 +39,7 @@ body{   /* this is the settings mainly for the global background image */
   background-color: rgba(0,0,0, 0.6); 
   width: 80%;
   padding-top: 5%;
-  margin-left: 20%;
-  margin-right: 20%; 
+  margin-left: 10%;
 }
 /* For mobile devices --->  LISA to compute the aspect ratio of the smaller picture given the width & height*/
 @media only screen and (max-width: 400px) {
