@@ -35,9 +35,14 @@ body{   /* this is the settings mainly for the global background image */
 /* formatting images on the index page*/
 .w3-card{
   text-align: center;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
-
+  /*background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.6); */
+  background-color: grey;
+  background-size: cover;
+  width: 70%;
+  padding-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 /* For mobile devices --->  LISA to compute the aspect ratio of the smaller picture given the width & height*/
 @media only screen and (max-width: 400px) {
