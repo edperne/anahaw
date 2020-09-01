@@ -18,8 +18,6 @@
       <a href="hours.html#hour" class="w3-bar-item w3-button w3-mobile">Hours</a>
       <a href="contact.html#cont" class="w3-bar-item w3-button w3-mobile">Contact</a>
     </nav>
-
-<!-- Here is our page's main content -->
 <main>    
 <h2>A place to dine together and celebrate food!</h2>
 <!--Illustrative images  -Responsive Image Gallery-->
@@ -29,21 +27,28 @@
         <div class="top-left"> <strong>Appetizers</strong> </div>
     </a>    
     <a  href="menu.html#appe">
-      <img src="images/salmon_mod25c.jpg" alt="Salmon Dish">
+      <picture>
+        <source srcset="images/salmon_mod20d.jpg" media="(max-width: 600px)" class="w3-image w3-border">
+        <source srcset="images/salmon_mod25c.jpg" media="(max-width: 1500px)" class="w3-image w3-border w3-hover-grayscale">
+        <img src="images/salmon_mod25c.jpg" class="w3-image w3-border w3-hover-grayscale" alt="Image of our fresh salmon appetizer." title="">
+       </picture>
+    
     </a>
-    <div class="menu-desc">Freshest selection of appetizers </div>
+    <div class="menu-desc">The freshest selection of appetizers </div>
 
   </div>
 </div>
-
-
 <div class="menupage" role="img" aria-label="Main">
   <div class="gallery">
     <a href="menu.html#main"> 
         <div class="top-left"><strong>Main</strong></div>      
     </a>
     <a  href="menu.html#main">
-      <img src="images/lamb_mod25c.jpg" alt="Delicious Lamb Dish" >
+      <picture>
+        <source srcset="images/lamb_mod20d.jpg" media="(max-width: 600px)" class="w3-image w3-border">
+        <source srcset="images/lamb_mod25c.jpg" media="(max-width: 1500px)" class="w3-image w3-border w3-hover-grayscale">
+        <img src="images/lamb_mod25c.jpg" class="w3-image w3-border w3-hover-grayscale" alt="Image of our delicious lamb dish" title="">
+       </picture>
     </a>
     <div class="menu-desc">Enjoy the best New Zealand meat</div>  
   </div>
@@ -55,8 +60,12 @@
             <div class="top-left"><strong>Dessert</strong></div>    
         </a>   
         <a href="menu.html#dess">
-            <img src="images/pudding_mod25c.jpg" alt="Famous Pudding" >
-        </a>
+          <picture>
+            <source srcset="images/pudding_mod20d.jpg" media="(max-width: 600px)" class="w3-image w3-border">
+            <source srcset="images/pudding_mod25c.jpg" media="(max-width: 1500px)" class="w3-image w3-border w3-hover-grayscale">
+            <img src="images/pudding_mod25c.jpg" class="w3-image w3-border w3-hover-grayscale" alt="Image of our famous pudding" title="">
+           </picture>
+            </a>
         <div class="menu-desc">Taste our most popular desserts</div>  
     </div>   
   </div>
@@ -69,7 +78,11 @@
     </a>    
    
     <a href="menu.html#beve">
-        <img src="images/wine_mod25c.jpg" alt="Wine">
+      <picture>
+        <source srcset="images/wine_mod20d.jpg" media="(max-width: 600px)" class="w3-image w3-border">
+        <source srcset="images/wine_mod25c.jpg" media="(max-width: 1500px)" class="w3-image w3-border w3-hover-grayscale">
+        <img src="images/wine_mod25c.jpg" class="w3-image w3-border w3-hover-grayscale" alt="Image of NZ finest wines" title="">
+       </picture>
     </a>
     <div class="menu-desc">Enjoy New Zealand finest wines</div>  
  
@@ -171,7 +184,7 @@
           </ul>  
  <!--Beverages -->             
             <h2 id="beve"><strong>Beverages</strong></h2>
-       <div class="beverage-table"     >
+       <div class="beverage-table">
             <table id="wine">
                 <tr>
                   <th>Red Wine</th>  
@@ -208,42 +221,39 @@
                 </tr>
             </table>
             <p></p>
-            <table>
-                <tr>
-                  <th id="wine-name">White Wine</th>  
-                  <th id="price">B/G</th>
-                </tr>
-                <tr>
-                    <td>Spade Oak Pinot Gris, 2011, Gisborne</td>  
-                    <td>40/10</td>
-                </tr>
-                <tr>
-                    <td>Maude Pinot Gris, 2017, Otago </td>  
-                    <td>49.50/11</td>
-                </tr>
-                <tr>
-                    <td>Charles Wiffen Chardonnay, 2013, Otago</td>  
-                    <td>48/11</td>
-                </tr>
-                <tr>
-                    <td>Amisfield, Riesling, 2016, Otago	</td>  
-                    <td>53/12</td>
-                </tr>
-                <tr>
-                    <td>Lamont Riesling, 2010, Otago	</td>  
-                    <td>57/13</td>
-                </tr>                   <tr>
-                    <td>Elephant Hill Viognier, 2013, Hawkes Bay	</td>  
-                    <td>55/12</td>
-                </tr>                   <tr>
-                    <td>Folium Sauvignon Blanc, 2011, Marlborough		</td>  
-                    <td>52/11</td>
-                </tr>                   <tr>
-                    <td>Billecart-Salmon Brut Reserve, France	</td>  
-                    <td>120</td>
-                </tr>
-            </table >
-            <p></p>
+            <table id="white">
+              <tr>
+                <th>White Wine</th>  
+                <th>B/G</th>
+              </tr>
+              <tr>
+                <td>Spade Oak Pinot Gris, 2011, Gisborne</td>  
+                <td>40/10</td>
+              </tr>
+              <tr>
+                <td>Maude Pinot Gris, 2017, Otago </td>  
+                <td>49.50/11</td>
+              </tr>
+              <tr>
+                <td>Charles Wiffen Chardonnay, 2013, Otago</td>  
+                <td>48/11</td>
+              </tr>
+              <tr>
+                <td>Amisfield, Riesling, 2016, Otago	</td>  
+                <td>53/12</td>
+              </tr>
+              <tr>
+                <td>Lamont Riesling, 2010, Otago	</td>  
+                <td>57/13</td>
+              </tr>                   <tr>
+                <td>Elephant Hill Viognier, 2013, Hawkes Bay	</td>  
+                <td>55/12</td>
+              </tr>                   <tr>
+                <td>Folium Sauvignon Blanc, 2011, Marlborough		</td>  
+                <td>52/11</td>
+              </tr>       
+          </table>
+          <p></p>
             <table id ="beer">
                 <tr>
                   <th>Beer And Cider</th>  
@@ -308,7 +318,6 @@
         </div>
     </section>
   </main>
-<!-- And here is our main footer that is used across all the pages of our website -->
 <footer>
 <div class="my_footer"  role="contentinfo">
   <div class="privacy">
@@ -319,6 +328,5 @@
   </div>
 </div>
 </footer>
-
 </body>
 </html>

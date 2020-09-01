@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="css/my-css.css">
+
   <title>The Haukai Restaurant Homepage</title>
 </head>  
 <body>
 
-<div class="container">    <!--This set 100%vh use for controlling footer section-->  
-
+ <div class="container">    <!--This set 100%vh use for controlling footer section-->  
   <header class="w3-container w3-teal">
     <h1 id="home" >The Haukai Restaurant</h1>
   </header>
@@ -22,55 +22,82 @@
     <a href="contact.html#cont" class="w3-bar-item w3-button w3-mobile">Contact</a>
   </nav>
 
-<main>
+  <main >
         <div class="bg-text">
-           <p>Experience the Maori Culture & Kai</p>
+          <h2 id="h2-exp">Experience the Maori Culture & Kai</h2>
            <a href="reservation.html#rese" role="button" class="w3-btn w3-teal w3-hover-grey w3-round-xxlarge" >Book Now </a>
         </div>
-
-</main>        
+ </main> 
 </div> <!--div ending for main container-->
 
 <!--Additional content for album images using w3-container-->
-<div class="w3-row-padding w3-margin-top w3-margin-bottom" role="img" aria-label="Haukai Restaurant & Maori Cultural Images">
+<div class="w3-row-padding w3-margin-bottom" role="img" aria-label="Haukai Restaurant & Maori Cultural Images">
 
+  <div class="half">
+    <div class="w3-card">
+      <picture>
+        <source srcset="images/restaurant_mod20d.jpg" media="(max-width: 600px)" class="w3-image w3-border">
+        <source srcset="images/index1_restaurant_640.jpg" media="(max-width: 1500px)" class="w3-image w3-border w3-hover-grayscale">
+        <img src="images/index1_restaurant_640.jpg" class="w3-image w3-border w3-hover-grayscale" alt="This is the image of the restaurant." title="">
+       </picture>
+        <div class="w3-container w3-grey">
+            <h2>Wecolme to The Haukai Restaurant!</h2>
+            <p>Featuring <strong>Maori & Pakeha Kai</strong></p>
+            <p>  Experience the <strong>Maori karakia</strong> for food blessings </p>
+            <p>Enjoy the taste of our rich culture & traditions</p> 
+            <hr>
+            <p>Open Wednesday to Sunday <br>
+              From 6:00pm-9:00pm<br>
+              Phone: 09-401-4019
+            </p>
+            <p>
+              <strong>Email:</strong> booking@thehaukai.co.nz
+            </p> 
+      </div>
+    </div>
+  </div>
+<!--Reduced number of images to achieve <2s loading time in home page 
   <div class="w3-quarter">
     <div class="w3-card">
-      <img src="images/restaurant_mod25c.jpg" class="w3-image w3-border w3-hover-grayscale" alt="The Haukai Restaurant">
+      <picture>
+        <source srcset="images/nz_mod20d.jpg" media="(max-width: 600px)"class="w3-image w3-border w3-hover-grayscale">
+        <source srcset="images/index2_nz.jpg" media="(max-width: 1500px)" class="w3-image w3-border w3-hover-grayscale">
+        <img src="images/index2_nz.jpg" class="w3-image w3-border w3-hover-grayscale" alt="Maori Wood Carvings">
+       </picture>
       <div class="w3-container w3-grey">
-        <p>The Restaurant</p>
+        <p>New Zealand Landscape<p>
       </div>
     </div>
   </div>
 
   <div class="w3-quarter">
     <div class="w3-card">
-      <img src="images/nz_mod25c.jpg" class="w3-image w3-border w3-hover-grayscale" alt="New Zealand Landscape">
+      <picture>
+        <source srcset="images/maori1_mod20d.jpg" media="(max-width: 600px)"class="w3-image w3-border w3-hover-grayscale">
+        <source srcset="images/index3_maori_640.jpg" media="(max-width: 1500px)" class="w3-image w3-border w3-hover-grayscale">
+        <img src="images/index3_maori_640.jpg" class="w3-image w3-border w3-hover-grayscale" alt="Maori Wood Carvings">
+       </picture>
       <div class="w3-container w3-grey">
-        <p>New Zealand Landscape</p>
+        <p>Maori Wood Carvings<p>
       </div>
     </div>
   </div>
-
+  
   <div class="w3-quarter">
-    <div class="w3-card">
-      <img src="images/maori1_mod25c.jpg" class="w3-image w3-border w3-hover-grayscale" alt="Maori faces">
-      <div class="w3-container w3-grey">
-        <p>Maori Wood Carvings</p>
-      </div>
-    </div>
-  </div>
-  <div class="w3-quarter">
-    <div class="w3-card">
-      <img src="images/maori2_mod25c.jpg" class="w3-image w3-border w3-hover-grayscale" alt="Maori mask">
-      <div class="w3-container w3-grey">
+      <div class="w3-card">
+        <picture>
+          <source srcset="images/maori2_mod20d.jpg" media="(max-width: 600px)"class="w3-image w3-border w3-hover-grayscale">
+          <source srcset="images/index4_maori_640.jpg" media="(max-width: 1500px)" class="w3-image w3-border w3-hover-grayscale">
+          <img src="images/index4_maori_640.jpg" class="w3-image w3-border w3-hover-grayscale" alt="Maori mask">
+         </picture>
+            <div class="w3-container w3-grey">
         <p>Cultural Mask</p>
       </div>
     </div>
+    
   </div>
-</div>
-
-<!--end of Additional content for images using w3-container-->
+ -->
+</div>  <!--end of Additional content for images using w3-container-->
 <footer>
   <div class="my_footer" role="contentinfo">
     <div class="privacy">
