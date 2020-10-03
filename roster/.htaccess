@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Restricted access"
+AuthUserFile /www/Module3/thr/.htpasswd
+Require valid-user
