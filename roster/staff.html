@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/thehaukai/css/my-css.css">
+   <title>Staff Roster Page</title>
+ </head>
+ <body>
+    <header class="w3-container w3-teal">
+       <h1 id="staff">The Haukai Restaurant</h1>
+    </header>
+    <nav class="w3-bar w3-black">
+      <a href="/thehaukai/index.html#home" class="w3-bar-item w3-button w3-mobile">Home</a>
+      <a href="/thehaukai/menu.html#menu" class="w3-bar-item w3-button w3-mobile">Menu</a>
+      <a href="/thehaukai/reservation.html#rese" class="w3-bar-item w3-button w3-mobile">Reservation</a>
+      <a href="/thehaukai/hours.html#hour" class="w3-bar-item w3-button w3-mobile">Hours</a>
+      <a href="/thehaukai/contact.html#cont" class="w3-bar-item w3-button w3-mobile">Contact</a>
+      <a href="staff.html#staff" class="w3-bar-item w3-button w3-mobile">Staff</a>
+    </nav>
+<main>
+   <h2><strong>Staff Roster Page</strong></h2>
+   <div class="roster-page">
+     <div class="roster" role="google sheet" aria-label="Weekly Roster Google Sheet" >
+        <iframe class="responsive_roster" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToBWgvr3fPFUVlTs6MWCAsjOcAfv7To4qQq4oTHYv2AdU-n2v9kIZG2zJrUWz0vG0eJCjIMuydwxq2/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+     </div>
+   </div>    
+ </main>
+<footer>
+<div class="my_footer"  role="contentinfo">
+   <div class="privacy">
+     <a  href="privacy.html#priv" ><strong>Privacy Policy</strong></a>
+   </div>
+   <div class="copyright"> 
+     <p> All rights reserved. ©Copyright 2020 The Haukai Restaurant.</p> 
+   </div>
+</div>
+</footer>
 
-<meta charset="utf-8">
-
-<title>Private page</title>
-<h1 id="staff" >Staff Roster Page</h1>
-</head>
-
-<body>
-
-<p>Only people who know the password should be able to see this page.</p>
-
-</body>
-
+ </body>
 </html>

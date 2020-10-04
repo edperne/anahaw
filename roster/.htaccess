@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Restricted access"
-AuthUserFile /www/Module3/thr/.htpasswd
+AuthUserFile "C:/UniServerZ/www/authen/.htpasswd"
 Require valid-user
