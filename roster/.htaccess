@@ -1,7 +1,11 @@
 AuthType Basic
 AuthName "Restricted access"
 <<<<<<< HEAD
+<<<<<<< HEAD
 AuthUserFile /anahaw/authen/.htpasswd
+=======
+AuthUserFile "/authen/.htpasswd"
+>>>>>>> 2e1fd60dd5fdac2ec0ec2d866b95a39d0fd276db
 =======
 AuthUserFile "/authen/.htpasswd"
 >>>>>>> 2e1fd60dd5fdac2ec0ec2d866b95a39d0fd276db
