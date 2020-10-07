@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Restricted access"
-AuthUserFile /edperne/anahaw/authen/.htpasswd"
+AuthUserFile /edperne/anahaw/authen/.htpasswd
 Require valid-user
